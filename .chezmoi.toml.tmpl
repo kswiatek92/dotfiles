@@ -1,0 +1,14 @@
+encryption = "age"
+
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age17xarwpa39hwahsz0n3kz9nkustgdmh32dy2gzxs54fat3r3ampzsllhshq"
+
+[data]
+    name = "Krzysztof Świątek"
+    email = "dredu71@gmail.com"
+{{- if eq .chezmoi.os "darwin" }}
+    os = "macos"
+{{- else if eq .chezmoi.os "linux" }}
+    os = "linux"
+{{- end }}

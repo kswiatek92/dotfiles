@@ -1,0 +1,58 @@
+# ~/.config/ghostty/config — zarządzane przez chezmoi
+
+# ── Kolory ────────────────────────────────────────────────────────────────────
+
+theme = Apple System Colors
+background = #1e1e1e
+selection-background = #3f638b
+selection-foreground = #ffffff
+cursor-color = #98989d
+cursor-text = #ffffff
+palette = 0=#1a1a1a
+palette = 1=#cc372e
+palette = 2=#26a439
+palette = 3=#cdac08
+palette = 4=#0869cb
+palette = 5=#9647bf
+palette = 6=#479ec2
+palette = 7=#98989d
+palette = 8=#464646
+palette = 9=#ff453a
+palette = 10=#32d74b
+palette = 11=#ffd60a
+palette = 12=#0a84ff
+palette = 13=#bf5af2
+palette = 14=#76d6ff
+palette = 15=#ffffff
+
+# ── Czcionka ──────────────────────────────────────────────────────────────────
+
+font-size = 13
+
+# ── Przezroczystość ───────────────────────────────────────────────────────────
+# Osobne opacity dla quick terminal i windowed jeszcze nie istnieje w Ghostty
+# https://github.com/ghostty-org/ghostty/discussions/3524
+
+background-opacity = 0.88
+background-blur = true
+
+# ── Okno ──────────────────────────────────────────────────────────────────────
+
+scrollback-limit = 10000
+copy-on-select = true
+window-save-state = always
+
+# ── Quick Terminal ────────────────────────────────────────────────────────────
+
+quick-terminal-position = top
+quick-terminal-screen = main
+quick-terminal-animation-duration = 0.2
+quick-terminal-autohide = true
+
+# Skrót globalny — działa nawet gdy Ghostty jest w tle
+keybind = ctrl+grave_accent=toggle_quick_terminal
+
+# ── Shell integration ─────────────────────────────────────────────────────────
+
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
