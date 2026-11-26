@@ -2,5 +2,8 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "claudeCode.preferredLocation": "panel",
     "claudeCode.selectedModel": "opus",
-    "python.analysis.typeCheckingMode": "standard"
+    "python.analysis.typeCheckingMode": "standard",
+    "python.defaultInterpreterPath": "/usr/bin/python",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.inlineSuggest.suppressInSnippetMode": false
 }
